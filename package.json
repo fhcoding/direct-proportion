@@ -1,0 +1,18 @@
+{
+  "name": "direct-proportion",
+  "version": "1.0.0",
+  "description": "\"Rules of three to calculate direct propotion\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"rule",
+    "of",
+    "three\"",
+    "\"direct",
+    "propoction\""
+  ],
+  "author": "fhcoding",
+  "license": "ISC"
+}

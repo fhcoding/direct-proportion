@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4ade80" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Règle de trois - proportion directe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="w-full bg-gradient-to-r from-cyan-900 to-blue-900 px-10">
+      <div class="container max-w-sm mx-auto flex flex-col min-h-screen gap-2 pt-5 sm:pt-10">
+        <header class="header p-5">
+          <h1 class="text-white text-center text-2xl font-bold uppercase">Règle de trois</h1>
+          <p class="text-sm text-white text-center">
+            Modifiez les trois cases pour voir le résultats en direct
+          </p>
+        </header>
+        <main class="relative">
+          <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center">
+            <div>
+              <div class="w-12 m-auto rounded-full h-2 bg-white rotate-45 origin-center relative">
+                <div
+                  class="arrow absolute w-2 h-2 border-l-8 border-r-8 border-transparent border-b-8 border-b-white -right-1 top-0 rotate-90"
+                ></div>
+              </div>
+              <div
+                class="w-12 -mt-2 m-auto rounded-full h-2 bg-white -rotate-45 origin-center"
+              ></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 direct-proportion">
+            <div class="flex gap-5">
+              <div
+                class="number-1 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+              >
+                <input
+                  type="number"
+                  autofocus
+                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                />
+              </div>
+              <div
+                class="number-2 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+              >
+                <input
+                  type="number"
+                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                />
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div
+                class="number-3 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+              >
+                <input
+                  type="number"
+                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                />
+              </div>
+              <div class="number w-full max-w-1/2 p-5 cursor-not-allowed">
+                <input
+                  type="number"
+                  class="relative z-50 result w-full p-2 rounded-md bg-opacity-25 bg-white border-green-400 border-2 focus-visible:outline-none font-bold text-green-400"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="group mt-auto text-center text-white p-5">
+          <p class="inline-block">
+            With &#9825; by
+            <a
+              href="https://github.com/fhcoding"
+              class="text-yellow-500 group-hover:text-orange-500 font-bold transition-all"
+              >fhcoding</a
+            >
+          </p>
+          <a
+            href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois"
+            class="text-sm italic text-white lowercase"
+          >
+            - En savoir plus</a
+          >
+        </footer>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
