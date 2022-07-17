@@ -1,6 +1,6 @@
 # Direct proportion
 
-[![Direct proportion by fhcoding][assets/images/view-template.png]](d.proportion.surge.sh)
+[![Direct proportion by fhcoding](assets/images/view-template.png)](d.proportion.surge.sh)
 
 ## Getting Started
 
