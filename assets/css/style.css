@@ -616,6 +616,10 @@ video {
   }
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .absolute {
   position: absolute;
 }
@@ -628,16 +632,16 @@ video {
   top: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
 .left-0 {
   left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .-right-1 {
@@ -764,16 +768,16 @@ video {
   border-width: 2px;
 }
 
+.border-b-8 {
+  border-bottom-width: 8px;
+}
+
 .border-l-8 {
   border-left-width: 8px;
 }
 
 .border-r-8 {
   border-right-width: 8px;
-}
-
-.border-b-8 {
-  border-bottom-width: 8px;
 }
 
 .border-transparent {
