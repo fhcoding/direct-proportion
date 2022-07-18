@@ -10,78 +10,80 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="w-full bg-gradient-to-r from-cyan-900 to-blue-900 px-10">
-      <div class="container max-w-sm mx-auto flex flex-col min-h-screen gap-2 pt-5 sm:pt-10">
-        <header class="header p-5">
-          <h1 class="text-white text-center text-2xl font-bold uppercase">Règle de trois</h1>
-          <p class="text-sm text-white text-center">
+    <div class="w-full px-10 bg-gradient-to-r from-cyan-900 to-blue-900">
+      <div class="container flex flex-col max-w-sm min-h-screen gap-2 pt-5 mx-auto sm:pt-10">
+        <header class="p-5 header">
+          <h1 class="text-2xl font-bold text-center text-white uppercase">Règle de trois</h1>
+          <p class="text-sm text-center text-white">
             Modifiez les trois cases pour voir le résultats en direct
           </p>
         </header>
         <main class="relative">
-          <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center pointer-events-none"
+          >
             <div>
-              <div class="w-12 m-auto rounded-full h-2 bg-white rotate-45 origin-center relative">
+              <div class="relative w-12 h-2 m-auto origin-center rotate-45 bg-white rounded-full">
                 <div
-                  class="arrow absolute w-2 h-2 border-l-8 border-r-8 border-transparent border-b-8 border-b-white -right-1 top-0 rotate-90"
+                  class="absolute top-0 w-2 h-2 rotate-90 border-b-8 border-l-8 border-r-8 border-transparent arrow border-b-white -right-1"
                 ></div>
               </div>
               <div
-                class="w-12 -mt-2 m-auto rounded-full h-2 bg-white -rotate-45 origin-center"
+                class="w-12 h-2 m-auto -mt-2 origin-center -rotate-45 bg-white rounded-full"
               ></div>
             </div>
           </div>
           <div class="flex flex-col gap-5 direct-proportion">
             <div class="flex gap-5">
               <div
-                class="number-1 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+                class="w-full p-5 bg-white border border-white rounded-lg shadow-2xl number-1 max-w-1/2 backdrop-blur-2xl bg-opacity-20 border-opacity-30"
               >
                 <input
                   type="number"
                   autofocus
-                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                  class="w-full p-2 font-bold text-white bg-white bg-opacity-25 border-2 border-white rounded-md focus-visible:outline-none"
                 />
               </div>
               <div
-                class="number-2 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+                class="w-full p-5 bg-white border border-white rounded-lg shadow-2xl number-2 max-w-1/2 backdrop-blur-2xl bg-opacity-20 border-opacity-30"
               >
                 <input
                   type="number"
-                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                  class="w-full p-2 font-bold text-white bg-white bg-opacity-25 border-2 border-white rounded-md focus-visible:outline-none"
                 />
               </div>
             </div>
             <div class="flex gap-5">
               <div
-                class="number-3 w-full max-w-1/2 p-5 backdrop-blur-2xl rounded-lg bg-white bg-opacity-20 shadow-2xl border border-white border-opacity-30"
+                class="w-full p-5 bg-white border border-white rounded-lg shadow-2xl number-3 max-w-1/2 backdrop-blur-2xl bg-opacity-20 border-opacity-30"
               >
                 <input
                   type="number"
-                  class="w-full p-2 rounded-md bg-opacity-25 bg-white border-white border-2 focus-visible:outline-none font-bold text-white"
+                  class="w-full p-2 font-bold text-white bg-white bg-opacity-25 border-2 border-white rounded-md focus-visible:outline-none"
                 />
               </div>
-              <div class="number w-full max-w-1/2 p-5 cursor-not-allowed">
+              <div class="w-full p-5 cursor-not-allowed number max-w-1/2">
                 <input
                   type="number"
-                  class="relative z-50 result w-full p-2 rounded-md bg-opacity-25 bg-white border-green-400 border-2 focus-visible:outline-none font-bold text-green-400"
+                  class="relative z-50 w-full p-2 font-bold text-green-400 bg-white bg-opacity-25 border-2 border-green-400 rounded-md result focus-visible:outline-none"
                 />
               </div>
             </div>
           </div>
         </main>
-        <footer class="group mt-auto text-center text-white p-5">
+        <footer class="p-5 mt-auto text-center text-white group">
           <p class="inline-block">
             With &#9825; by
             <a
               href="https://github.com/fhcoding"
-              class="text-yellow-500 group-hover:text-orange-500 font-bold transition-all"
+              class="font-bold text-yellow-500 transition-all group-hover:text-orange-500"
               >fhcoding</a
             >
             -
           </p>
           <a
             href="https://fr.wikipedia.org/wiki/R%C3%A8gle_de_trois"
-            class="underline text-sm italic text-white lowercase"
+            class="text-sm italic text-white underline lowercase"
             >En savoir plus</a
           >
         </footer>
